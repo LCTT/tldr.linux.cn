@@ -59,11 +59,6 @@
     computed:{
       isLoaded:function(){
         return !this.loaded
-      },
-      descriptionText:() => {
-        // eslint-disable-next-line
-        console.log(this)
-        return this.description
       }
     }
   }
