@@ -15,8 +15,8 @@ new Vue({
   router,
   vuetify,
   render: h => h(App),
-  beforeCreate: function(){
-		const auth = this.$tcb.auth();
-		auth.signInAnonymously();
+  beforeCreate: async function(){
+		const auth = this.$tcb.auth({ persistence: 'local' });
+		await auth.signInAnonymously();
   }
 }).$mount('#app')

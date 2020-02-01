@@ -17,6 +17,7 @@ const routes = [
   {
     path: '/cmd/:cmd',
     name: 'command',
+    props: true ,
     component: () => import(/* webpackChunkName: "cmd" */ '../views/Result.vue')
   }
 ]
