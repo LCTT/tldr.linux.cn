@@ -4,7 +4,7 @@
 			<v-container class="fill-height" fluid>
         <v-row>
           <v-col>
-            <h1 style="min-height:300px;line-height: 300px" class="display-3 text-center">简单好用的 Linux 命令速查工具</h1>  
+            <h1 style="min-height:100px;line-height: 100px" class="display-1 text-center">简单好用的 Linux 命令速查工具</h1>  
           </v-col>
         </v-row>
         <v-row>
