@@ -14,8 +14,8 @@
             outlined
         v-model="cmd"
         @keydown="onKeyDown"
-        label="命令"
-        placeholder="请输入你需要查询的命令，如 vim"
+        label="请输入你需要查询的命令"
+        placeholder="输入 vim ，按下回车试试看？"
         required
         autofocus
         append-icon="mdi-magnify"

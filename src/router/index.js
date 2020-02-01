@@ -12,6 +12,7 @@ const routes = [
   {
     path: '/list/:cmd',
     name: 'list',
+     props: true ,
     component: () => import(/* webpackChunkName: "list" */ '../views/List.vue')
   },
   {

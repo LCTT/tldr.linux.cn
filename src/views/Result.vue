@@ -19,7 +19,7 @@
           </v-col>
         </v-row>
         <v-spacer></v-spacer>
-        <v-row v-bind:key="item" v-for="item in command.examples">
+        <v-row v-bind:key="item.description" v-for="item in command.examples">
           <v-col>
             <h1 class="headline"><code>{{item.command}}</code></h1>
             <h2>{{item.description}}</h2>
@@ -32,7 +32,7 @@
 <script>
   export default {
     name:"result",
-    props: ['cmd'],
+    props: ['cmd','id'],
     data:function(){
       return {
         loaded: false
@@ -41,19 +41,25 @@
     created:function(){
       const db = this.$tcb.database();
       const cmd = db.collection('command');
-      cmd.where({
-        name: this.$route.params.cmd
-      }).limit(1).get().then(res => {
-        // eslint-disable-next-line
-        console.log(res.data[0])
-        this.command = res.data[0]
-        this.loaded = true;
-      }).catch((err) => {
-        alert("命令查询出错，请联系微信 ixiqin_com")
-        // eslint-disable-next-line
-        console.error(err)
-      })
-      
+      if(this.id){
+        cmd.doc(this.id).get().then(res => {
+          this.command = res.data
+          this.loaded = true;
+        })
+      }else{
+        cmd.where({
+          name: this.$route.params.cmd
+        }).limit(1).get().then(res => {
+          // eslint-disable-next-line
+          console.log(res.data[0])
+          this.command = res.data[0]
+          this.loaded = true;
+        }).catch((err) => {
+          alert("命令查询出错，请联系微信 ixiqin_com")
+          // eslint-disable-next-line
+          console.error(err)
+        })
+      }
       
     },
     computed:{
