@@ -5002,6 +5002,13 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+mars-mta@^0.0.2:
+  version "0.0.2"
+  resolved "http://mirrors.tencent.com/npm/mars-mta/-/mars-mta-0.0.2.tgz#a290f0d29b48bdde4ed8dc19e5152e8549709817"
+  integrity sha512-05IP4lbCc9GcD4LfWxRdmNN43BWBZiJ3TPBwngD1OixjyKMuFEic77rkS6ku9ojdfG+O+a2DLYqDOTJDz456dQ==
+  dependencies:
+    mta-h5-analysis "^2.0.15"
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "http://mirrors.cloud.tencent.com/npm/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -5254,6 +5261,11 @@ ms@^2.1.1:
   version "2.1.2"
   resolved "http://mirrors.cloud.tencent.com/npm/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+mta-h5-analysis@^2.0.15:
+  version "2.0.15"
+  resolved "http://mirrors.tencent.com/npm/mta-h5-analysis/-/mta-h5-analysis-2.0.15.tgz#75db0f438aad890b0a07c7ebb4dfcdb35669a692"
+  integrity sha512-VSrh+ksz829y23O5w0T0LsIZG8kxBoHa/757Fs0ESHzh18vjG9Lh/q3aCKKiSQuVuFvdUG3CQLUJ3TIotEolfg==
 
 multicast-dns-service-types@^1.1.0:
   version "1.1.0"

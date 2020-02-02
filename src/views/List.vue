@@ -56,14 +56,21 @@
     created:function(){
       const db = this.$tcb.database();
       const cmd = db.collection('command');
+      const name = this.$route.params.cmd
       cmd.where({
-        name: this.$route.params.cmd
+        name: name
       }).get().then(res => {
 
        
         if(res.data.length == 0){
           this.noResult = true;
           this.loaded = true;
+          this.$stat({
+              event: 'notexist', // 上报事件,
+              data: {
+                cmd: name
+              } // 附带事件数据
+            })
         }else{
           this.commands = res.data
           this.loaded = true;
