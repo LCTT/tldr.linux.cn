@@ -20,6 +20,12 @@ const routes = [
     name: 'command',
     props: true ,
     component: () => import(/* webpackChunkName: "cmd" */ '../views/Result.vue')
+  },
+  {
+    path: '*',
+    redirect: {
+      name:"home"
+    }
   }
 ]
 

@@ -51,8 +51,14 @@
         cmd.where({
           name: name
         }).limit(1).get().then(res => {
+
           // eslint-disable-next-line
-          console.log(res.data[0])
+          console.log(res.data)
+          if(res.data.length === 0) {
+            this.$router.replace({
+              name:"home"
+            })
+          }
           this.command = res.data[0]
           this.loaded = true;
         }).catch((err) => {
