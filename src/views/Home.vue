@@ -44,24 +44,25 @@ export default {
   },
   methods:{
     onKeyDown: function(e)  {
+      let cmd = this.cmd.toLowerCase();
       if(e.keyCode === 13){
         const db = this.$tcb.database();
         const cmds = db.collection('command');
         cmds.where({
-          name: this.cmd
+          name: cmd
         }).count().then(res => {
           if(res.total === 1){
             this.$router.push({
               name:"command",
               params:{
-                cmd:this.cmd
+                cmd:cmd
               }
             })
           }else{
             this.$router.push({
               name:"list",
               params:{
-                cmd:this.cmd
+                cmd:cmd
               }
             })
           }

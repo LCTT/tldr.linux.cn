@@ -41,6 +41,7 @@
     created:function(){
       const db = this.$tcb.database();
       const cmd = db.collection('command');
+      let name = this.$route.params.cmd.toLowerCase()
       if(this.id){
         cmd.doc(this.id).get().then(res => {
           this.command = res.data
@@ -48,7 +49,7 @@
         })
       }else{
         cmd.where({
-          name: this.$route.params.cmd
+          name: name
         }).limit(1).get().then(res => {
           // eslint-disable-next-line
           console.log(res.data[0])
