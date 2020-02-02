@@ -1,24 +1,16 @@
-# tldr
+# TLDR： 简单易用的 Linux 命令查询工具
 
-## Project setup
-```
-yarn install
-```
+![Node.js CI](https://github.com/bestony/tldr.linux.cn/workflows/Node.js%20CI/badge.svg)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+[Website](https://tldr.linux.cn)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Usage 
 
-### Lints and fixes files
-```
-yarn lint
-```
+1. clone repository
+2. install requirements: `yarn`
+3. run dev server: `yarn serve`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## LICENSE 
+
+MIT LICENSE
