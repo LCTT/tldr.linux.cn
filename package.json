@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "fundebug-javascript": "^2.0.0",
+    "fundebug-vue": "0.0.1",
     "mars-mta": "^0.0.2",
     "tcb-js-sdk": "^1.3.7",
     "vue": "^2.6.10",

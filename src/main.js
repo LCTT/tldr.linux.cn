@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify';
 import Mars from 'mars-mta'
+import * as fundebug from "fundebug-javascript";
+import fundebugVue from "fundebug-vue";
+
 
 const tcb = require('tcb-js-sdk')
 
@@ -24,6 +27,11 @@ Vue.use(Mars, {
       performanceMonitor: 1, // 是否开启性能监控
     }
 })
+
+// use fundebug 
+
+fundebug.apikey = "6c920ebf9efb1f866cd56510aa3e4084d5f82d8609d35a9f6c75c6a947ee726a"
+fundebugVue(fundebug, Vue);
 
 new Vue({
   router,
