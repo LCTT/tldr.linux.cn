@@ -17,7 +17,9 @@
     </v-app-bar>
 
     <v-content>
+      <transition>
         <router-view></router-view>
+      </transition>
     </v-content>
     <v-footer>
     <v-spacer></v-spacer>
