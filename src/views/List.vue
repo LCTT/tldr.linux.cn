@@ -17,7 +17,7 @@
            <v-card
             dark
           >
-            <v-card-title class="headline">{{item.name}}</v-card-title>
+            <v-card-title class="headline">{{item.name}} <v-chip class="ml-2"  small>{{item.platform}}</v-chip></v-card-title>
 
             <v-card-subtitle>{{item.description[0]}}</v-card-subtitle>
 
