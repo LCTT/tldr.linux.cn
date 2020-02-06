@@ -44,8 +44,10 @@
       let name = this.$route.params.cmd.toLowerCase()
       if(this.id){
         cmd.doc(this.id).get().then(res => {
-          this.command = res.data
+          this.command = res.data[0]
           this.loaded = true;
+          // eslint-disable-next-line
+          console.log("data",res.data);
         })
       }else{
         cmd.where({
