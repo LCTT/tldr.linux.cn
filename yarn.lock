@@ -768,6 +768,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@bugsnag/safe-json-stringify@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/safe-json-stringify/-/safe-json-stringify-5.0.0.tgz#1c39847968b52f5c08b7c76754406f9d4446b292"
+  integrity sha512-EdGnA7n2UmX9Z0e2tIU0biKz8tCgtjbY69KoyH3yiMzm7Q9sriIlN9bZjqhTOKzM0GdLSGrkyKWif08xWKyucA==
+
 "@cloudbase/adapter-interface@^0.3.0":
   version "0.3.0"
   resolved "http://mirrors.tencent.com/npm/@cloudbase%2fadapter-interface/-/adapter-interface-0.3.0.tgz#f8e5478ad152b888994dbeb9012db7966a9b087b"
@@ -1292,9 +1297,9 @@ acorn-walk@^6.1.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^6.0.2, acorn@^6.0.7, acorn@^6.1.1, acorn@^6.2.1:
-  version "6.4.0"
-  resolved "http://mirrors.cloud.tencent.com/npm/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 address@^1.1.2:
   version "1.1.2"
@@ -3725,6 +3730,18 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "http://mirrors.cloud.tencent.com/npm/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+fundebug-javascript@^2.0.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/fundebug-javascript/-/fundebug-javascript-2.4.0.tgz#c643d09779d6b49afba35254240399ac9828cdb3"
+  integrity sha512-7nF3qnKqEixPG+VeNl4ffaaeHsNrg9aolDnUtzvnVWHnWWezmbw5TFZvheNlYuRYpwVLfG4+MNGBmZp21KlsIA==
+  dependencies:
+    "@bugsnag/safe-json-stringify" "^5.0.0"
+
+fundebug-vue@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/fundebug-vue/-/fundebug-vue-0.0.1.tgz#aae1a6a0bb580c2da5835f1702fae583e2fe7609"
+  integrity sha512-dk6D5FASmvhUwepc5SL6221B9NHw6hZ7ZLU/nWuyRcrBrrOWbxiH30CrEYwr6VK76UlUb6mpJ+Mzr2r7sfqk8w==
 
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
