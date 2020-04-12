@@ -9,22 +9,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: install qshell
-      uses: foxundermoon/setup-qshell@v1.0
-      with:
-        qshell-version: 2.4.1
-    - name: login to qiniu
-      run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} default
     - name: install Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
     - run: npm install
     - run: npm run build --if-present
-    - name: generate 404 page
-      run: cp dist/index.html dist/errno-404
-    - name: upload
-      run: qshell qupload2 --src-dir dist/ --bucket linuxcn-tldr --thread-count 50 --overwrite -d
     - name: upload to tencentcloud
       uses: TencentCloudBase/cloudbase-action@v1
       with:
