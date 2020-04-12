@@ -25,4 +25,11 @@ jobs:
       run: cp dist/index.html dist/errno-404
     - name: upload
       run: qshell qupload2 --src-dir dist/ --bucket linuxcn-tldr --thread-count 50 --overwrite -d
+    - name: upload to tencentcloud
+      uses: TencentCloudBase/cloudbase-action@v1
+      with:
+          secretId: ${{ secrets.secretId }}
+          secretKey: ${{ secrets.secretKey }}
+          envId: ${{ secrets.envId }}
+          staticSrcPath: dist
     - run: echo "Done"
