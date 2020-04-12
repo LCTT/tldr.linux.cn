@@ -22,6 +22,4 @@ jobs:
           secretKey: ${{ secrets.secretKey }}
           envId: ${{ secrets.envId }}
           staticSrcPath: dist
-    - name: Get the deploy result
-      run: echo "Deploy to cloudbase result ${{ steps.deployStatic.outputs.deployResult }}"
     - run: echo "Done"
