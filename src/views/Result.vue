@@ -54,24 +54,14 @@
           name: name
         }).limit(1).get().then(res => {
           if(res.data.length === 0) {
-            this.$stat({
-              event: 'notexist', // 上报事件,
-              data: {
-                cmd: name
-              } // 附带事件数据
-            })
+            
             this.$router.replace({
               name:"home"
             })
           }
           this.command = res.data[0]
           this.loaded = true;
-          this.$stat({
-            event: 'command', // 上报事件,
-            data: {
-              cmd: name
-            } // 附带事件数据
-          })
+         
         }).catch((err) => {
           alert("命令查询出错，请联系微信 ixiqin_com")
           // eslint-disable-next-line

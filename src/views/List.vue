@@ -65,12 +65,7 @@
         if(res.data.length == 0){
           this.noResult = true;
           this.loaded = true;
-          this.$stat({
-              event: 'notexist', // 上报事件,
-              data: {
-                cmd: name
-              } // 附带事件数据
-            })
+          
         }else{
           this.commands = res.data
           this.loaded = true;
