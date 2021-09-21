@@ -8,11 +8,11 @@
       <v-spacer></v-spacer>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <transition>
         <router-view></router-view>
       </transition>
-    </v-content>
+    </v-main>
     <v-footer>
       <v-spacer></v-spacer>
       <div>
