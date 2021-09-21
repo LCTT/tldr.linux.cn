@@ -4,6 +4,10 @@
 
 [Website](https://tldr.linux.cn)
 
+## Feature Request
+
+ - 提交新功能请通过 [issue](https://github.com/LCTT/tldr.linux.cn/issues/new)
+
 ## Usage 
 
 1. clone repository
