@@ -26,4 +26,11 @@ jobs:
           ${{ runner.os }}-yarn-
     - run: yarn
     - run: npm run build --if-present
+    - uses: ngduc/vercel-deploy-action@master
+      with:
+        vercel-cli: vercel
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.ORG_ID}}
+        vercel-project-id: ${{ secrets.PROJECT_ID}}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - run: echo "Done"
